@@ -99,6 +99,12 @@ export function listen(options: NSLocalOptions) {
 						req: NodeSiteRequest
 				  ) => ListenerResponse | Promise<ListenerResponse>),
 			file?: string
-		) => NodeSiteClient.create(options.name, path, listener, file),
+		) =>
+			NodeSiteClient.create(
+				options.name,
+				path,
+				listener || undefined,
+				file
+			),
 	};
 }
