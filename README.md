@@ -6,12 +6,11 @@ Local http listener for nodesite.eu
 import { listen } from 'nodesite.eu-local';
 
 const { create } = listen({
-    port: 8080,
-    name: 'mysite.nodesite.eu',
+	port: 8080,
+	name: 'mysite.nodesite.eu',
 });
 
 create('/', (req) => 'Hello, world');
 ```
 
-create() works the same as with regular [NodeSite.eu](<https://github.com/prokopschield/nodesite.eu>)
-
+create() works the same as with regular [NodeSite.eu](https://github.com/prokopschield/nodesite.eu)
