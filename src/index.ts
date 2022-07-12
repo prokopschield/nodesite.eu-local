@@ -58,10 +58,17 @@ export function listen(options: NSLocalOptions) {
 					value && res.setHeader(header, value);
 				}
 			}
-			if (ans.body) {
+			if ('body' in ans) {
 				res.write(ans.body);
+				res.end();
+			} else if ('hash' in ans) {
+				NodeSiteClient.ready.then((socket) => {
+					socket.emit('blob_get', ans.hash, (blob: Buffer) => {
+						res.write(blob);
+						res.end();
+					});
+				});
 			}
-			res.end();
 		});
 	}
 	let {

@@ -19,7 +19,7 @@
 	},
 	"homepage": "https://github.com/prokopschield/nodesite.eu-local#readme",
 	"dependencies": {
-		"nodesite.eu": "^1.2.0-19",
+		"nodesite.eu": "^1.2.0-32",
 		"uncased": "^1.0.0-5"
 	}
 }
