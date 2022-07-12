@@ -7,7 +7,7 @@ import {
 	NodeSiteRequest,
 	rewrite,
 } from 'nodesite.eu';
-import Uncased from 'uncased';
+import { sanitizeRecord } from 'ps-std';
 
 export interface NSLocalOptions {
 	name: string;
@@ -32,7 +32,7 @@ export function listen(options: NSLocalOptions) {
 		options.name = `${options.name}.nodesite.eu`;
 	function listener(req: http.IncomingMessage, res: http.ServerResponse) {
 		const data_buf_ar = Array<Buffer>();
-		const headers = new Uncased(req.headers);
+		const headers = sanitizeRecord(req.headers);
 		req.on('data', (chunk) => data_buf_ar.push(chunk));
 		req.on('end', async () => {
 			const nsreq: NodeSiteRequest = {
@@ -43,7 +43,7 @@ export function listen(options: NSLocalOptions) {
 				body: Buffer.concat(data_buf_ar),
 				head: {
 					host: options.name,
-					...headers.str,
+					...headers,
 				},
 			};
 			const ans = await rewrite(nsreq, '.');

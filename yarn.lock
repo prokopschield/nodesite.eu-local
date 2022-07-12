@@ -260,11 +260,6 @@ ts-hound@^1.0.8:
   resolved "https://registry.yarnpkg.com/ts-hound/-/ts-hound-1.0.8.tgz#2f049771f9d0532788e093d2798070ea7b807d58"
   integrity sha512-OiM+kPGlAaBGhKDTRR0NFe4wR0n9kQVoJ9cj/KJ0yvmSFc73b/lcHsYXGJJwlNKtKrCeHZq5/cvWaqHbgPpkyQ==
 
-uncased@^1.0.0-5:
-  version "1.0.0-5"
-  resolved "https://registry.yarnpkg.com/uncased/-/uncased-1.0.0-5.tgz#2ae867ecbfba3cf0bb205d363932833405a04ea2"
-  integrity sha512-hHllLJUjwXI6dff8sys62K7j0/Fk/fUJtJlT/Af3a/KI82baFeSowp73cZomGx0ewiB9pi9VnAn4rOFQhfEIZQ==
-
 webidl-conversions@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
