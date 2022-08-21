@@ -1,7 +1,7 @@
 {
 	"name": "nodesite.eu-local",
 	"description": "Local listener for nodesite.eu",
-	"version": "1.2.3",
+	"version": "1.2.4",
 	"main": "lib/index.js",
 	"author": "Prokop Schield",
 	"license": "GPL-3.0-or-later",

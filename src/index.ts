@@ -68,6 +68,8 @@ export function listen(options: NSLocalOptions) {
 						res.end();
 					});
 				});
+			} else {
+				res.end();
 			}
 		});
 	}
