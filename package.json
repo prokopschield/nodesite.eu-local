@@ -1,7 +1,7 @@
 {
 	"name": "nodesite.eu-local",
 	"description": "Local listener for nodesite.eu",
-	"version": "1.2.2",
+	"version": "1.2.3",
 	"main": "lib/index.js",
 	"author": "Prokop Schield",
 	"license": "GPL-3.0-or-later",
@@ -19,6 +19,6 @@
 	},
 	"homepage": "https://github.com/prokopschield/nodesite.eu-local#readme",
 	"dependencies": {
-		"nodesite.eu": "^1.2.0-32"
+		"nodesite.eu": "^1.2.0-34"
 	}
 }

@@ -46,7 +46,7 @@ export function listen(options: NSLocalOptions) {
 					...headers,
 				},
 			};
-			const ans = await rewrite(nsreq, '.');
+			const ans = await rewrite(nsreq, '');
 			if (!ans) return void res.end();
 			if (typeof ans === 'string' || ans instanceof Buffer) {
 				res.write(ans);

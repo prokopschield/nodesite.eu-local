@@ -189,10 +189,10 @@ nodesite.eu-core@^1.3.0:
     "@lvksh/logger" "1.5.2"
     socket.io-client "^3.1.3"
 
-nodesite.eu@^1.2.0-32:
-  version "1.2.0-32"
-  resolved "https://registry.yarnpkg.com/nodesite.eu/-/nodesite.eu-1.2.0-32.tgz#153df7d841634a17ba5243ed23835bb0de82afa0"
-  integrity sha512-50/6syPxJXwZpsqadRX8+ovldLOyYuPPcerD0Pt50BBggkyEPEMqX1V8mPOTOAsMsQ9pGAofgquPy7j2ujyGjw==
+nodesite.eu@^1.2.0-34:
+  version "1.2.0-34"
+  resolved "https://registry.yarnpkg.com/nodesite.eu/-/nodesite.eu-1.2.0-34.tgz#1c48ab2a1ce1a417a9818a02a2e99c23d05f9a66"
+  integrity sha512-SARA0he9fKuU8Vq8ArOy4v4qXEupynGitKvA9I94cmeYqH5I0Wa8Eb4rOBBGGzk6bZIe2wRW9k1+rS+JMdE7tQ==
   dependencies:
     "@prokopschield/registry" "^0.1.0-3"
     "@types/mime-types" "^2.1.1"
@@ -204,6 +204,7 @@ nodesite.eu@^1.2.0-32:
     node-fetch "^2.6.7"
     nodesite.eu-core "^1.3.0"
     ps-std "^0.1.6"
+    socket.io-client "^3.1.3"
     ts-hound "^1.0.8"
 
 parseqs@0.0.6:
