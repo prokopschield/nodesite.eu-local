@@ -7,6 +7,7 @@ import {
 	NodeSiteRequest,
 	rewrite,
 } from 'nodesite.eu';
+import { saturate } from 'nsblob-stream';
 import { sanitizeRecord } from 'ps-std';
 
 export interface NSLocalOptions {
@@ -68,6 +69,8 @@ export function listen(options: NSLocalOptions) {
 						res.end();
 					});
 				});
+			} else if ('stream' in ans) {
+				saturate(ans.stream, res);
 			} else {
 				res.end();
 			}
