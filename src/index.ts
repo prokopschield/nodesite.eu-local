@@ -10,6 +10,8 @@ import {
 import { saturate } from 'nsblob-stream';
 import { sanitizeRecord } from 'ps-std';
 
+import { writeSource } from './writeSource';
+
 export interface NSLocalOptions {
 	name: string;
 	port: number;
@@ -53,6 +55,11 @@ export function listen(options: NSLocalOptions) {
 				res.write(ans);
 				return void res.end();
 			}
+
+			if ('props' in ans) {
+				return writeSource(req, res, ans);
+			}
+
 			if (ans.statusCode) res.statusCode = ans.statusCode;
 			if (ans.head) {
 				for (const [header, value] of Object.entries(ans.head)) {
